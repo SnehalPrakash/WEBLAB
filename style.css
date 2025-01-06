@@ -1,0 +1,86 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    background-color: #007acc; /* Header background color */
+    color: white; /* Text color */
+    padding: 50px 20px; /* Padding around header content */
+}
+
+/* Section styles */
+.section {
+    padding: 20px; /* Padding inside each section */
+    margin: 20px auto; /* Margin around each section */
+    max-width: 800px; /* Maximum width of each section */
+}
+
+/* Styles for Top Destinations and Culture sections */
+.cards, .image-gallery, .fade-in {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space between items */
+}
+
+/* Individual image container styles */
+.cards div, .image-gallery div, .fade-in div {
+    flex: 1 1 30%; /* Flex-grow, flex-shrink, and basis for layout */
+    margin-bottom: 20px; /* Space below each image */
+    margin-right: 10px; /* Space to the right of each image */
+    text-align: center; /* Center-align the content */
+}
+
+/* Remove right margin from last item in each row to avoid overflow */
+.cards div:last-child, .image-gallery div:last-child, .fade-in div:last-child {
+    margin-right: 0; /* Remove margin from last item */
+}
+
+/* Image styles */
+.cards img, .image-gallery img, .fade-in img {
+    max-width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add some rounding */
+}
+
+/* Footer styles */
+.footer {
+    text-align: center; /* Center-align footer text */
+    padding: 20px; /* Padding inside footer */
+    background-color: #f1f1f1; /* Footer background color */
+    margin-top: 20px; /* Space above footer */
+}
+
+/* Explore button styles */
+.explore-button {
+    display: inline-block; /* Make button inline-block */
+    background-color: white; /* Button background color */
+    color: #007acc; /* Button text color */
+    padding: 10px 20px; /* Padding inside button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text */
+    margin-top: 20px; /* Space above button */
+}
+
+/* Hover effect for the explore button */
+.explore-button:hover {
+    background-color: #005fa3; /* Darker background on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* Section title links */
+.section h2 a {
+    color: #007acc; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+/* Hover effect for section titles */
+.section h2 a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
